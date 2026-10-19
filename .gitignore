@@ -1,0 +1,13 @@
+# Packaging outputs (created by `pack` / archive tools)
+*.tgz
+*.zip
+*.tar.gz
+
+# Node
+node_modules/
+npm-debug.log*
+.pnpm-store/
+
+# OS noise
+Thumbs.db
+.DS_Store

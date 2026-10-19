@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Markdown Text Direction",
+    "description": "Controls how mixed Persian/English markdown is aligned in the conversation: auto per paragraph, forced right-to-left, or forced left-to-right."
+  }
+}

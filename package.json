@@ -1,0 +1,52 @@
+{
+  "name": "@local/md-direction",
+  "version": "1.0.0",
+  "description": "DSH Harness bundle: 3-mode text-direction control (Auto/RTL/LTR) for mixed Persian/English markdown in the Web GUI conversation.",
+  "author": "N. Iranshahi <niranshahi@gmail.com>",
+  "contributors": [
+    "N. Iranshahi <niranshahi@gmail.com> (owner)",
+    "DeepSeek Harness AI assistant (GLM coding agent) (design & implementation helper)"
+  ],
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.fa.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niranshahi/dsh-plugin-md-direction.git"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "rtl",
+    "ltr",
+    "bidi",
+    "markdown",
+    "persian",
+    "farsi"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-layout", "@deepseek-ai/dsh-client-ui-settings"]
+    }
+  }
+}
